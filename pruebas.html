@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Bariol', sans-serif;
+      background-color: #f8f9fa; /* Set a background color */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .service-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+
+    .service-item {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+    }
+
+    .modal {
+      display: none;
+    }
+
+    .modal-content {
+      height: 86%;
+      width: 101%;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .close {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="aos-init fade-up-right o_bg_img_opt_custom oe_custom_bg oe_img_bg pb40 pt24 te_s_text_image" data-name="Text - Image - 2" style="background-image: url(&quot;/web/image/68399/fondo-servicios%20%281%29.jpg&quot;); background-size: 100%; background-position: 0% 50%;" data-aos="fade-up-right" id="servicios">
+    <div class="container">
+      <h1 style="text-align: center; font-weight: bolder; color: #fff;">Servicios Odontopeques</h1>
+      <div class="service-container align-items-center row">
+        <div class="aos-init bg-white-75 col-lg-3 fade-up-left pb64 pt64 shadow service-item" style="border-radius: 20px;" data-aos="fade-up-left" id="uno">
+          <div class="text-center" style="padding: 0px !important;">
+            <p class="te_title_t">
+              <b style="color: #f28222; font-size: 20px;">ATENCIÓN ODONTOLÓGICA A GESTANTES</b>
+            </p>
+          </div>
+          <div class="fade modal" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 style="color: #f28222; font-weight: bolder;">ATENCIÓN ODONTOLÓGICA A GESTANTES</h2>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    La salud bucal de la madre durante la gestación afecta la salud integral y bucal del bebé. Es por eso que en Odontopeques cuidamos la salud de las mamis en esta etapa, brindando una atención especializada y de calidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above code block for each service item -->
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const serviceItems = document.querySelectorAll('.service-item');
+  
+      serviceItems.forEach(item => {
+        const modal = item.querySelector('.modal');
+        const closeModalBtn = item.querySelector('.close');
+  
+        item.addEventListener('click', function () {
+          modal.style.display = 'block';
+        });
+  
+        closeModalBtn.addEventListener('click', function () {
+          modal.style.display = 'none';
+        });
+  
+        window.addEventListener('click', function (event) {
+          if (event.target === modal || event.target === closeModalBtn) {
+            modal.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  
+  
+  
+</body>
+</html>
