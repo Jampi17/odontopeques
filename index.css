@@ -174,6 +174,18 @@ h1 {
     color: white;
     font-size: 15px;
 }
+@media screen and (max-width: 600px) {
+    .servicos_fila1,
+    .servicos_fila2 {
+      flex-direction: column;
+      gap: 20px; /* Puedes ajustar el espacio entre los elementos según tus preferencias */
+    }
+  
+    .Servicios {
+      width: 100%;
+    }
+  }
+
 
 /*equipo*/
 .galeria {
@@ -200,12 +212,14 @@ h1 {
 /*info footer*/
 .info-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Cambiado a columna en pantallas pequeñas */
     background-color: #f5f2f2ec;
+    padding: 20px;
 }
 
 .info-container {
     display: flex;
+    flex-direction: column; /* Cambiado a columna en pantallas pequeñas */
     width: 100%;
 }
 
@@ -218,17 +232,27 @@ h1 {
     text-align: center;
     gap: 10px;
     justify-content: center;
-    align-items: center;
 }
 
 .icon-container img {
     width: 20px;
-    /* Ajusta el tamaño según sea necesario */
     height: auto;
 }
 
 .text-container h5 {
     font-size: 13px;
+}
+
+/* Media queries para ajustes responsivos */
+@media screen and (min-width: 768px) {
+    .info-section {
+        flex-direction: row; /* Cambiado a fila en pantallas más grandes */
+        justify-content: space-between;
+    }
+
+    .info-container {
+        flex-direction: row; /* Cambiado a fila en pantallas más grandes */
+    }
 }
 
 /*foter*/
@@ -452,35 +476,38 @@ h1 {
 /*prefooter*/
 .prefooter {
     display: flex;
+    flex-direction: column; /* Cambiado a columna en pantallas pequeñas */
     justify-content: center;
-    height: 250px;
+    height: auto; /* Ajustado la altura automáticamente */
     align-items: center;
-  }
-  
-  .card {
+}
+
+.card {
     perspective: 1000px;
-    width: 380px;
+    width: 100%; /* Ancho del 100% para ocupar todo el contenedor padre */
+    max-width: 380px; /* Ancho máximo para mantener la legibilidad */
     height: 100px;
     position: relative;
     margin: 20px;
     cursor: pointer;
-  }
-  .card img{
+}
+
+.card img {
     height: 50px;
-  }
-  
-  .card-inner {
+}
+
+.card-inner {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .card:hover .card-inner {
+}
+
+.card:hover .card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .card-face {
+}
+
+.card-face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -489,9 +516,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .front, .back {
+}
+
+.front, .back {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -500,16 +527,29 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     border-radius: 25px;
-  }
-  
-  .front {
+}
+
+.front {
     border: none; /* Eliminar el borde del div frontal */
-  }
-  
-  .back {
+}
+
+.back {
     transform: rotateY(180deg);
     background-color: rgba(242, 130, 34, 0.7); /* Fondo para el div trasero */
-  }
-  a{
+}
+
+a {
     text-decoration: none;
-  }
+}
+
+/* Media query para ajustes responsivos */
+@media screen and (min-width: 768px) {
+    .prefooter {
+        flex-direction: row; /* Cambiado a fila en pantallas más grandes */
+    }
+
+    .card {
+        max-width: none; /* Restaurar el ancho máximo en pantallas más grandes */
+        margin: 20px;
+    }
+}
