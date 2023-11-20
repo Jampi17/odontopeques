@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jampi webs</title>
+  <title>Odontopeques</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -16,8 +16,8 @@
     <label for="custom-toggle-nav"><img src="imagenes/menu.png" class="custom-menu" alt=".." /></label>
     <nav class="custom-navigation">
       <ul>
-        <li class="custom-menu-item custom-grupo-piaggio active"><a href="#">Inicio</a></li>
-        <li class="custom-menu-item custom-grupo-piaggio active"><a href="gastronia.html">Contáctenos</a></li>
+        <li class="custom-menu-item custom-grupo-piaggio active"><a href="index.html">Inicio</a></li>
+        <li class="custom-menu-item custom-grupo-piaggio active"><a href="contacto.html">Contáctenos</a></li>
     </nav>
   </section>
   <section class="video_odonto" id="video_odonto">
@@ -133,28 +133,28 @@
         <div class="servicos_fila1">
           <div class="Servicios" onclick="abrirModal(1)">
             <h1 style="color: rgb(242, 130, 34);">ATENCIÓN ODONTOLÓGICA A GESTANTES</h1>
-        </div>
-          <div class="Servicios">
+          </div>
+          <div class="Servicios" onclick="abrirModal(2)">
             <h1 style="color: rgb(7, 172, 240);">ODONTOLOGÍA PARA BEBÉS</h1>
           </div>
-          <div class="Servicios">
+          <div class="Servicios" onclick="abrirModal(3)">
             <h1 style="color: rgb(127, 193, 67);">ODONTOPEDIATRÍA</h1>
           </div>
-          <div class="Servicios">
+          <div class="Servicios" onclick="abrirModal(4)">
             <h1 style="color: rgb(237, 3, 138);">ORTODONCIA</h1>
           </div>
         </div>
         <div class="servicos_fila2">
-          <div class="Servicios">
+          <div class="Servicios" onclick="abrirModal(5)">
             <h1 style="color: rgb(242, 130, 34);">ATENCIÓN DE PACIENTES CON NECESIDADES ESPECIALES</h1>
           </div>
-          <div class="Servicios">
+          <div class="Servicios" onclick="abrirModal(6)">
             <h1 style="color: rgb(7, 172, 240);">SEDACIÓN</h1>
           </div>
-          <div class="Servicios">
+          <div class="Servicios" onclick="abrirModal(7)">
             <h1 style="color: rgb(127, 193, 67);">FRENILLO LINGUAL</h1>
           </div>
-          <div class="Servicios">
+          <div class="Servicios" onclick="abrirModal(8)">
             <h1 style="color: rgb(237, 3, 138);">CIRUGÍA ORAL</h1>
           </div>
         </div>
@@ -163,41 +163,211 @@
   </section>
   <div id="modal1" class="modal">
     <div class="modal-content">
-        <span class="close" onclick="cerrarModal(1)">&times;</span>
-        <p>Este es el contenido del modal para ATENCIÓN ODONTOLÓGICA A GESTANTES.</p>
-        <p>Existen problemas en la mordida que necesitan tratamiento temprano y otros un poco más tardío.</p>
-        <p>El tipo de aparatología a utilizar depende de cada caso.</p>
+      <span class="close" onclick="cerrarModal(1)">&times;</span>
+      <h2 style="color: rgb(242, 130, 34); font-weight: bolder;">ATENCIÓN ODONTOLÓGICA A GESTANTES
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">La salud bucal de la madre durante la
+            gestación afecta la salud
+            integral y bucal del bebé. Es por eso que en Odontopeques cuidamos la salud de las mamis en esta etapa,
+            brindando una
+            atención especializada y de calidad.
+          </font>
+        </p>
+      </div>
     </div>
-</div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(2)">&times;</span>
+      <h2 style="color: rgb(7, 172, 240); font-weight: bolder;">ODONTOLOGÍA PARA BEBÉS
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">La odontopediatría actual busca enfocarse en la prevención
+            ,
+            es por eso que en Odontopeques hacemos mucho énfasis en las visitas al odontopediatra durante el primer año
+            de vida.
+            Nuestro objetivo es preservar la salud bucal del niño a largo plazo, basado en información adecuada, medidas
+            preventivas
+            y trabajo en equipo.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(3)">&times;</span>
+      <h2 style="color: rgb(127, 193, 67); font-weight: bolder;">ODONTOPEDIATRÍA
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">Odontopeques es una clínica especializada en
+            odontopediatría,
+            que brinda atención profesional de calidad en un ambiente especialmente diseñado para que el niño y su
+            familia viva una experiencia odontológica agradable.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(4)">&times;</span>
+      <h2 style="color: rgb(237, 3, 138); font-weight: bolder;">ORTODONCIA
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">Es la especialidad que se encarga de ver que la mordida de
+            tu peque se vea bien y funcione bien.
+            Existen problemas en la mordida que necesitan tratamiento temprano y otros un poco más tardío. El tipo de
+            aparatología a utilizar depende de cada caso.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(5)">&times;</span>
+      <h2 style="color: rgb(242, 130, 34); font-weight: bolder;">ATENCIÓN DE PACIENTES CON NECESIDADES ESPECIALES
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">En Odontopeques contamos con profesionales capacitados en
+            la atención
+            de pacientes con necesidades especiales , brindando una atención integral y humana centrada en las
+            necesidades del paciente y su familia.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(6)">&times;</span>
+      <h2 style="color: rgb(7, 172, 240); font-weight: bolder;">SEDACIÓN
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">La sedación en odontopediatría es un recurso necesario en
+            los casos en los que las técnicas de
+            manejo de conducta no dan resultado. Ya sea por inmadurez psicológica del paciente (niños muy pequeños) o
+            temor extremo. En Odontopeques contamos
+            con los servicios de sedación consciente, sedación inhalatoria con óxido nitroso y sedación profunda con un
+            anestesiólogo pediátrico y todo el
+            equipo necesario para garantizar la seguridad del paciente en el tratamiento.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(7)">&times;</span>
+      <h2 style="color: rgb(127, 193, 67); font-weight: bolder;">FRENILLO LINGUAL
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">La presencia de un frenillo lingual corto puede tener
+            consecuencias en la
+            lactancia materna en bebés y en niños más grandes dificultades en la pronunciación de ciertos fonemas,
+            deglución y masticación.
+            Una correcta evaluación e intervención oportuna son claves para prevenir estas complicaciones.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="modal8" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal(8)">&times;</span>
+      <h2 style="color: rgb(237, 3, 138); font-weight: bolder;">CIRUGÍA ORAL
+      </h2>
+      <h1></h1>
+      <div class="modal-body">
+        <p style="line-height: 17px;">
+          <br>
+          <br>
+          <br>
+          <font style="font-size: 26px;letter-spacing: 0px;">Existen situaciones como la presencia de quistes, diente
+            adicionales,
+            dientes retenidos, entre otros, que requieren tratamientos realizados por un especialista en Cirugía oral
+            pediátrica.
+            En Odontopeques contamos con un especialista en esta área, lo que permite darle un manejo integral al
+            paciente.
+          </font>
+        </p>
+      </div>
+    </div>
+  </div>
   <section>
-    <div class="carousel-container">
-      <div class="carousel-wrapper">
-        <div class="carousel-item"><iframe
+    <div class="carousel-container2">
+      <div class="carousel-wrapper2">
+        <div class="carousel-item2"><iframe
             src="//www.dailymotion.com/embed/video/x7vrz0p?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
             frameborder="0"></iframe></div>
-        <div class="carousel-item"><iframe
+        <div class="carousel-item2"><iframe
             src="//www.dailymotion.com/embed/video/x7vnspi?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
             frameborder="0"></iframe></div>
-        <div class="carousel-item"><iframe
+        <div class="carousel-item2"><iframe
             src="//www.dailymotion.com/embed/video/x7vozy6?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
             frameborder="0"></iframe></div>
-        <div class="carousel-item"><iframe
-            src="//www.dailymotion.com/embed/video/x7vrz0p?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
-            frameborder="0"></iframe></div>
-        <div class="carousel-item"><iframe
+        <div class="carousel-item2"><iframe
             src="//www.dailymotion.com/embed/video/x7vi08m?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
             frameborder="0"></iframe></div>
-        <div class="carousel-item"><iframe
+        <div class="carousel-item2"><iframe
             src="//www.dailymotion.com/embed/video/x7vhztl?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
             frameborder="0"></iframe></div>
-        <div class="carousel-item"><iframe
+        <div class="carousel-item2"><iframe
             src="//www.dailymotion.com/embed/video/x7vp02c?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
             frameborder="0"></iframe></div>
+        <div class="carousel-item2"> <iframe
+            src="//www.dailymotion.com/embed/video/x7vi098?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
+            frameborder="0"></iframe></div>
+        <div class="carousel-item2"><iframe
+            src="//www.dailymotion.com/embed/video/x7vi09v?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
+            frameborder="0"></iframe></div>
+        <div class="carousel-item2"><iframe
+            src="//www.dailymotion.com/embed/video/x7vi09w?autoplay=0&amp;ui-logo=0&amp;sharing-enable=0"
+            frameborder="0"></iframe></div>
       </div>
-      <div class="prevBtn">&#10094;</div>
-      <div class="nextBtn">&#10095;</div>
+      <div class="prevBtn2">&#10094;</div>
+      <div class="nextBtn2">&#10095;</div>
     </div>
   </section>
+
+
 
   <section class="galeria">
     <div class="imagen-container">
@@ -287,10 +457,10 @@
       controlCarousel(carouselWrapper1, 'prev');
     });
 
-    // Carrusel 2 - Iframes sin animación de zoom
-    const carouselWrapper2 = document.querySelector('.carousel-container:nth-of-type(2) .carousel-wrapper');
-    const prevBtn2 = document.querySelector('.carousel-container:nth-of-type(2) .prevBtn');
-    const nextBtn2 = document.querySelector('.carousel-container:nth-of-type(2) .nextBtn');
+    // Carrusel 2 - Videos con animación diferente
+    const carouselWrapper2 = document.querySelector('.carousel-container2 .carousel-wrapper2');
+    const prevBtn2 = document.querySelector('.carousel-container2 .prevBtn2');
+    const nextBtn2 = document.querySelector('.carousel-container2 .nextBtn2');
 
     nextBtn2.addEventListener('click', () => {
       controlCarousel(carouselWrapper2, 'next');
@@ -300,6 +470,7 @@
       controlCarousel(carouselWrapper2, 'prev');
     });
 
+    /*modales*/
     function abrirModal(num) {
       document.getElementById(`modal${num}`).style.display = "flex";
     }
